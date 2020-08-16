@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/logo.svg';
@@ -6,7 +6,7 @@ import backIcon from '../../assets/icons/back.svg';
 
 import './styles.css';
 
-const PageHeader: React.FunctionComponent<PageHeaderProps> = ({title,children}) => (
+const PageHeader: React.FunctionComponent<PageHeaderProps> = ({title, children}) => (
   <header className="page-header">
     <div className="top-bar-cointainer">
       <Link to="/">
